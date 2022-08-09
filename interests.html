@@ -222,7 +222,15 @@
 
     </footer>
     <script>
-
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
     </script>
     <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCNhN-AuZ-v4T_ByyDKINYlHZIU-HFmQ&callback=initMap"
